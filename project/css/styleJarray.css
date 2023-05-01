@@ -1,0 +1,182 @@
+.mai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* add this line to make the container scrollable */
+height: calc(100vh - 100px)}
+main::-webkit-scrollbar {
+display: none;
+}
+
+
+  .forum {
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+   
+    margin-bottom: 50px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], textarea{
+    border: none;
+    background-color: #F9F9F9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 5px;
+    resize: none;
+    transition: all 0.3s ease;
+  }
+  textarea{
+    resize: vertical;
+    
+  }
+  input[type="file"] {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 5px;
+    resize: none;
+    transition: all 0.3s ease;
+  }
+
+  input[type="text"]:focus, textarea:focus, input[type="file"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background-color: #0275d8;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #015bb5;
+  }
+  
+  .recent-articles {
+background: var(--color-white);
+padding: var(--card-padding);
+border-radius: var(--card-border-radius);
+box-shadow: var(--box-shadow);
+transition: all 300ms ease;
+}
+
+.recent-articles h2 {
+margin-bottom: 20px;
+}
+
+.article-list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+}
+
+.article-list li {
+flex: 1 1 300px;
+margin-right: 25px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+overflow: hidden;
+transition: box-shadow 0.3s ease;
+}
+
+.article-list li:hover {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.article-list a {
+display: flex;
+flex-direction: column;
+height: 100%;
+text-decoration: none;
+color: #000;
+}
+
+.article-image {
+width: 100%;
+height: 200px;
+overflow: hidden;
+}
+
+.article-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.article-info {
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex-grow: 1;
+}
+
+.article-info h3 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.article-date {
+font-size: 16px;
+color: #666;
+}
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .actions button i {
+    font-size: 18px;
+  }
+  
+  .actions button.delete i {
+    color: #ff0000;
+  }
+  
+  .actions button.edit i {
+    color: #0077cc;
+  }
+  
